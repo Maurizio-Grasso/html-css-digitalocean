@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FA CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -16,189 +19,660 @@
 
     <title>DigitalOcean – The developer cloud</title>
   </head>
-  <body class="debug">
 
-  <header>  <!-- Header Start -->
+  <body class="">
 
-    <section id="header-top-bar">  <!-- Top Bar START -->
+    <header>  <!-- Header Start -->
 
-    </section>  <!-- Top Bar END -->
+      <section id="header-top-bar" class="text-capitalize">  <!-- Top Bar START -->
 
-    <section id="header-banner">  <!-- Banner START -->
+        <div class="container">
+          <div class="row">
 
-      <div class="container">
+            <div class="col-xs-9 col-md-2">  <!-- Col LOGO START -->
+              <div class="outer-logo">
+                <img class="logo align-y" src="img/logo.png" alt="DigitalOcean logo">
+              </div>  <!-- Outer logo END -->
+            </div>  <!-- Col LOGO END -->
 
-        <div class="row">
+            <div class="col-xs-3 visible-xs visible-sm">  <!-- Col Hamburger (only Mobile) START -->
+              <div class="text-right">
+                <a href="#"><span id="hamburger-icon" class="fa-ready"></span></a>
+              </div>
 
-          <div class="col-xs-12 col-sm-8">
+            </div>  <!-- Col Hamburger END -->
 
-          </div>
+            <div class="col-md-6 visible-md visible-lg">  <!-- Col Main Menu START -->
+              <nav>
+                <ul class="list-unstyled list-inline text-center">
+                  <li><a class="add-chevron fa-ready" href="">products</a></li>
+                  <li><a href="">customers</a></li>
+                  <li><a class="add-chevron fa-ready" href="">community</a></li>
+                  <li><a href="">pricing</a></li>
+                </ul>
+              </nav>
+            </div> <!-- Col Main Menu END -->
 
-          <div class="col-xs-12 col-sm-4">
 
-          </div>
+            <div class="col-md-4 visible-md visible-lg">  <!-- Col Nav.Menu START -->
+
+              <nav>
+                <ul class="list-unstyled list-inline text-right">
+                  <li><a href="">docs</a></li>
+                  <li><a class="add-chevron fa-ready" href="">support</a></li>
+                  <li><a href="">login</a></li>
+                  <li><a class="btn" href="">sign up</a></li>
+                </ul>
+              </nav>
+
+            </div>  <!-- Col Nav.Menu END -->
+          </div>  <!-- ROW END -->
 
         </div>
-      </div>
+      </section>  <!-- Top Bar END -->
 
-    </section>  <!-- Banner END -->
-
-  </header>  <!-- Header END -->
-
-  <main>  <!-- Main START -->
-
-    <section id="customers">  <!-- Customer Section START -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-
-
-          </div>  <!-- Col END -->
-        </div>  <!-- ROW END -->
-      </div>   <!-- Container END -->
-
-    </section> <!-- Customer Section END -->
-
-
-
-    <section id="how-it-works">  <!-- How-it-Works Section START -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-
-            <!-- Section Headeing Here -->
-
-          </div>  <!-- Col END -->
-        </div>  <!-- ROW END -->
-
-        <div class="row">
-          <div class="col-xs-12 col-md-3 col-md-offset-1">  <!-- Col Menu START-->
-
-
-          </div>  <!-- Col Menu END -->
-
-          <div class="col-xs-12 col-md-8">  <!-- Item List START-->
+      <section id="header-banner">  <!-- Banner START -->
+        <div class="banner-outer padding-top-more padding-bottom-more">
+          <div class="container">
 
             <div class="row">
 
-              <div class="col-xs-12 col-md-6">  <!-- #1 Item START -->
+              <div class="col-xs-12 col-sm-7">
+                <div id="header-banner-text" class="text-white padding-top-standard padding-bottom-standard">
+                  <h1>The Simplest Cloud Platform for Developers & Teams</h1>
+                  <p class="text-bigger">Deploy, manage, and scale cloud applications faster and more fficientrly on DigitalOcean. We make managing infrastructure easy for teams and businesses, wheter you're running one virtual machine or ten thousand.</p>
+                </div>
 
-              </div>  <!-- #1 Item END-->
+              </div>
 
-              <div class="col-xs-12 col-md-6">  <!-- #2 Item START -->
+              <div class="col-xs-12 col-sm-5">
 
-              </div>  <!-- #2 Item END-->
+                <div class="padding-top-standard padding-bottom-standard">
+                <div id="sign-up-widget" class="padding-more ms-bg-white">
 
-              <div class="col-xs-12 col-md-6">  <!-- #3 Item START -->
+                  <h2 class="text-center">Deploy your app in seconds.</h2>
+                  <h2 class="text-center text-primary">Get Started Now.</h2>
 
-              </div>  <!-- #3 Item END-->
+                  <form action="index.html" method="post">
 
-              <div class="col-xs-12 col-md-6">  <!-- #4 Item START -->
+                    <div class="margin-top-standard margin-bottom-standard">
+                      <input type="email" name="" value="" placeholder="Email">
+                    </div>
 
-              </div>  <!-- #4 Item END-->
+                    <div class="margin-top-standard margin-bottom-standard">
+                      <input type="password" name="" value="" placeholder="Password">
+                    </div>
+
+                    <button type="button" class="btn ms-btn-blue btn-lg btn-block margin-top-standard margin-bottom-standard">Create Your Account</button>
+
+                    <button id="google-sign-up" type="button" class="btn ms-btn-white btn-lg btn-block margin-top-standard margin-bottom-standard">Sign Up With Google</button>
+                    <p class="small text-center">By signing up you agree by the <a href="#">Terms of Service</a></p>
+                  </form>
+                </div>
+                </div>
+              </div>
 
             </div>
-          </div>  <!-- Item List END-->
-
-        </div>  <!-- ROW END -->
-
-      </div>   <!-- Container END -->
-    </section>    <!-- How-it-Works Section END -->
-
-    <section id="slider-1">  <!-- Section slider-1 START -->
-
-    </section>  <!-- Section Slider-1 END -->
-
-    <section id="features">   <!-- Section Features START -->
-
-      <div class="container">
-        <div class="row">  <!-- Heading ROW START -->
-          <div class="col-xs-12">
-
           </div>
-        </div>  <!-- Heading ROW END -->
+        </div>
+      </section>  <!-- Banner END -->
 
-        <div class="row">   <!-- 3-col ROW START -->
+    </header>  <!-- Header END -->
 
-          <div class="col-xs-12 col-sm-4">  <!-- Col #1 of 3 START -->
+    <main>  <!-- Main START -->
 
-          </div>  <!-- Col #1 END -->
+      <section id="customers">  <!-- Customer Section START -->
 
-          <div class="col-xs-12 col-sm-4">  <!-- Col #2 of 3 START -->
+        <div class="ms-bg-gray text-center padding-top-more padding-bottom-more">
 
-          </div>  <!-- Col #2 END -->
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
 
-          <div class="col-xs-12 col-sm-4">  <!-- Col #3 of 3 START -->
+                <p class="text-uppercase text-bigger margin-top-more">Innovative businesses trust DigitalOcean</p>
 
-          </div>  <!-- Col #3 END -->
+              </div>  <!-- Col END -->
+            </div>  <!-- ROW END -->
 
-        </div>   <!-- 3-col ROW START -->
+            <div class="padding-more margin-top-more margin-bottom-more">
+
+              <div class="text-left">
+
+                <div class="row gutter-5-px">
+
+                  <div class="col-xs-6 col-sm-2">  <!-- Col #1 logo Start -->
+                    <img src="img/logo_docker.svg" alt="">
+                  </div>  <!-- Col END -->
+
+                  <div class="col-xs-6 col-sm-2">  <!-- Col #2 logo Start -->
+                    <img src="img/logo_gitlab.svg" alt="">
+                  </div>  <!-- Col END -->
+
+                  <div class="col-xs-6 col-sm-2">  <!-- Col #3 logo Start -->
+                    <img src="img/logo_slack.svg" alt="">
+                  </div>  <!-- Col END -->
+
+                  <div class="col-xs-6 col-sm-2">  <!-- Col #4 logo Start -->
+                    <img src="img/logo_hashicorp.svg" alt="">
+                  </div>  <!-- Col END -->
+
+                  <div class="col-xs-6 col-sm-2">  <!-- Col #5 logo Start -->
+                    <img src="img/logo_hashicorp.svg" alt="">
+                  </div>  <!-- Col END -->
+
+                  <div class="col-xs-6 col-sm-2">  <!-- Col #6 logo Start -->
+                    <img src="img/logo_splunk.svg" alt="">
+                  </div>  <!-- Col END -->
+                </div>  <!-- ROW END -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="margin-bottom-more">
+                  <a href="#">View customers stories &gt;</a>
+                </div>
+              </div>  <!-- Col END -->
+            </div>  <!-- ROW END -->
+
+          </div>   <!-- Container END -->
+        </div>  <!-- Inner Section END -->
+
+      </section> <!-- Customer Section END -->
+
+      <section id="how-it-works">  <!-- How-it-Works Section START -->
+        <div class="padding-top-more padding-bottom-more">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="text-center margin-bottom-more">
+                  <h2>Deploy and scale seamlessly</h2>
+                  <p class="text-bigger">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                </div>
+
+              </div>  <!-- Col END -->
+            </div>  <!-- ROW END -->
+
+            <div class="ms-smaller-container contents-on-mobile">
+
+              <div class="row">
+
+                <div class="col-xs-12 col-sm-3">  <!-- Col Menu START-->
+                  <div class="padding-top-standard">
+                    <ul class="list-unstyled text-capitalize padding-standard">
+                      <li class="margin-bottom-more"><a href="#">deploy</a></li>
+                      <li class="margin-bottom-more"><a href="#">manage</a></li>
+                      <li class="margin-bottom-more"><a href="#">secure</a></li>
+                      <li class="margin-bottom-more"><a href="#">scale</a></li>
+                      <li class=""><a href="#">monitor</a></li>
+                    </ul>
+                  </div>
+                </div>  <!-- Col Menu END -->
+
+                <div class="col-xs-12 col-sm-9">  <!-- Item List START-->
+
+                  <div class="row">  <!-- Inner Row #1 START -->
+
+                    <div class="col-xs-12 col-sm-6">  <!-- #1 Item START -->
+                      <div class="padding-standard contents-on-mobile">
+                        <div class="margin-top-standard contents-on-wide">
+                          <img src="img/cluster-deploy.svg" alt="">
+                          <h3>Cluster deployments</h3>
+                          <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                        </div>
+                      </div>
+
+                    </div>  <!-- #1 Item END-->
+
+                    <div class="col-xs-12 col-sm-6">  <!-- #2 Item START -->
+                      <div class="padding-standard contents-on-mobile">
+                        <div class="margin-top-standard contents-on-wide">
+                          <img src="img/optimized-compute.svg" alt="">
+                          <h3>Optimized compute types</h3>
+                          <p>Get the resources you need with Standard or Optimized Droplets</p>
+                        </div>
+                      </div>
+                    </div>  <!-- #2 Item END-->
+                  </div><!-- ROW Inner #1 END -->
+
+                  <div class="row">  <!-- Inner Row #2 START -->
+                    <div class="col-xs-12 col-sm-6">  <!-- #3 Item START -->
+                      <div class="padding-standard contents-on-mobile">
+                        <div class="margin-top-standard contents-on-wide">
+                          <img src="img/one-click.svg" alt="">
+                          <h3>One-click apps</h3>
+                          <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                        </div>
+                      </div>
+                    </div>  <!-- #3 Item END-->
+
+                    <div class="col-xs-12 col-sm-6">  <!-- #4 Item START -->
+                      <div class="padding-standard contents-on-mobile">
+                        <div class="margin-top-standard contents-on-wide">
+                          <img src="img/global.svg" alt="">
+                          <h3>Global availability</h3>
+                          <p>Deploy to any of our data center regions around the world.</p>
+                        </div>
+                      </div>
+                    </div>  <!-- #4 Item END-->
+
+                  </div><!-- ROW Inner #2 END -->
+                </div>  <!-- Item List END-->
+
+              </div>  <!-- ROW Outer END -->
+            </div>  <!-- Smaller Container END-->
+          </div>   <!-- Container END -->
+
+        </div>    <!-- Section Padding END -->
+      </section>  <!-- How-it-Works Section END -->
+
+      <section id="slider-1">  <!-- Section slider-1 START -->
+
+        <div class="ms-bg-gray ms-overflow-auto text-center">
+
+          <div class="margin-top-more margin-bottom-more padding-top-more padding-bottom-more">
+
+            <div class="container">  <!-- Container Outer START -->
+              <div class="row">  <!-- Row Heading START -->
+                <div class="col-xs-12">  <!-- Col Heading START -->
+
+                  <h2 class="margin-top-standard margin-bottom-standard">Designed for Developers</h2>
+
+                  <p class="text-bigger margin-top-standard margin-bottom-standard">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+
+                </div> <!-- Col END -->
+              </div> <!-- ROW END -->
+
+              <div class="ms-smaller-container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="inner-slider padding-more">
+
+                      <img class="img-responsive center-block" src="img/screenshot-createdroplet.jpg" alt="">
+
+                      <a href="#"><span class="hidden-xs slider-arrow-left align-y fa-ready"></span></a>
+                      <a href="#"><span class="hidden-xs slider-arrow-right align-y fa-ready"></span></a>
+
+                    </div>  <!-- Inner Slider END -->
+                  </div>
+
+                  <div class="col-xs-12">  <!-- Slider Caption -->
+
+                    <p class="margin-bottom-standard">Create compute servers in 55 seconds or less</p>
+
+                    <div class="slider-circles">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>  <!-- Circles END -->
+
+                  </div>  <!-- COL Slider Caption END -->
+                </div>   <!-- Row END -->
+              </div>  <!-- Smaller Container END -->
+            </div>  <!-- Container Grid END -->
+
+          </div>  <!-- Margin and Padding END -->
+        </div>  <!-- inner section END -->
+      </section>  <!-- Section Slider-1 END -->
+
+      <section id="features">   <!-- Section Features START -->
+
+        <div class="padding-top-more padding-bottom-more">
+
+          <div class="container">
+            <div class="row">  <!-- Heading ROW START -->
+              <div class="col-xs-12">
+                <h2 class="text-center margin-top-more margin-bottom-more padding-bottom-more">The features your business needs</h2>
+              </div>
+            </div>  <!-- Heading ROW END -->
+
+            <div class="row">   <!-- 3-col ROW START -->
+
+              <div class="col-xs-12 col-sm-4">  <!-- Col #1 of 3 START -->
+
+                <img src="img/pred-pricing.svg" alt="">
+                <h3 class="margin-top-standard margin-bottom-standard">Predictable Pricing</h3>
+                <p class="margin-top-standard margin-bottom-standard">Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+                <p class="margin-top-standard margin-bottom-more"><a href="#">Pricing &gt;</a></p>
+
+              </div>  <!-- Col #1 END -->
+
+              <div class="col-xs-12 col-sm-4">  <!-- Col #2 of 3 START -->
+
+                <img src="img/world-class.svg" alt="">
+                <h3 class="margin-top-standard margin-bottom-standard">World-class Service</h3>
+                <p class="margin-top-standard margin-bottom-standard">Free round-the-clock technical support for all customers. You'll feel the love.</p>
+                <p class="margin-top-standard margin-bottom-more"><a href="#">Support &gt;</a></p>
+
+              </div>  <!-- Col #2 END -->
+
+              <div class="col-xs-12 col-sm-4">  <!-- Col #3 of 3 START -->
+
+                <img src="img/reliable-platform.svg" alt="">
+                <h3 class="margin-top-standard margin-bottom-standard">Reliable Platform</h3>
+                <p class="margin-top-standard margin-bottom-standard">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services</p>
+                <p class="margin-top-standard margin-bottom-more"><a href="#">Security &gt;</a></p>
+
+              </div>  <!-- Col #3 END -->
+
+            </div>   <!-- 3-col ROW END -->
+          </div>
+
+        </div>  <!-- inner section END -->
+
+      </section>   <!-- Section Features END -->
+
+      <section id="our-locations">   <!-- Section Locations START -->
+        <div class="ms-bg-gradient-blue padding-top-more padding-bottom-more text-white">  <!-- Inner Section START -->
+          <div class="container">
+
+            <div class="row">  <!-- Heading ROW START -->
+              <div class="col-xs-12">
+                <h2 class="text-center">Service your customers around the world from 12 regions</h2>
+              </div>
+            </div>  <!-- Heading ROW END -->
+
+            <div class="row">  <!-- ROW Outer Location list START -->
+
+              <div class="col-xs-12 col-md-6">  <!-- COL Location #1 START -->
+                <div id="location-table-1" class="padding-standard">  <!-- inner location #1 START -->
+                  <div class="row">  <!-- ROW #1 table START -->
+
+                    <div class="col-xs-12">  <!-- COL #1 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">ams2</div>
+                          <div class="col-xs-6 text-capitalize">Amsterdam, Netherlands</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #2 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">ams3</div>
+                          <div class="col-xs-6 text-capitalize">Amsterdam, Netherlands</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #3 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">blr1</div>
+                          <div class="col-xs-6 text-capitalize">bangalore, india</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #4 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">fra1</div>
+                          <div class="col-xs-6 text-capitalize">frankfurt, germany</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #5 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">lon1</div>
+                          <div class="col-xs-6 text-capitalize">london, UK</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #6 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">nyc1</div>
+                          <div class="col-xs-6 text-capitalize">New York, USA</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                  </div>  <!-- ROW #1 table END -->
+                </div>  <!-- inner location table #1 END -->
+              </div>  <!-- COL Location table #1 END -->
+
+              <div class="col-xs-12 col-md-6">  <!-- COL Location #2 START -->
+
+                <div id="location-table-1" class="padding-standard">
+                  <div class="row">
+
+                    <div class="col-xs-12">  <!-- COL #1 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">ams2</div>
+                          <div class="col-xs-6 text-capitalize">Amsterdam, Netherlands</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #2 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">ams3</div>
+                          <div class="col-xs-6 text-capitalize">Amsterdam, Netherlands</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #3 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">blr1</div>
+                          <div class="col-xs-6 text-capitalize">bangalore, india</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #4 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">fra1</div>
+                          <div class="col-xs-6 text-capitalize">frankfurt, germany</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #5 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">lon1</div>
+                          <div class="col-xs-6 text-capitalize">london, UK</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                    <div class="col-xs-12">  <!-- COL #6 Location START -->
+                      <div class="row">  <!-- Inner ROW START -->
+                        <div class="single-location-content">
+                          <div class="col-xs-2 text-uppercase">nyc1</div>
+                          <div class="col-xs-6 text-capitalize">New York, USA</div>
+                          <div class="col-xs-4 text-right"><a href="#">Test speed ></a></div>
+                        </div>
+
+                      </div>  <!-- Inner ROW END -->
+                    </div>
+
+                  </div>  <!-- ROW #2 table END -->
+                </div>  <!-- inner location table #2 END -->
+              </div>  <!-- COL Location table #2 END -->
+
+            </div><!-- ROW Outer Location list END -->
+          </div>  <!-- Container END -->
+        </div>    <!-- Inner Section END -->
+      </section>  <!-- Section Location END -->
+
+      <section id="slider-2">  <!-- Section slider-2 START -->
+        <div class="ms-bg-gray ms-overflow-auto text-center">
+
+          <div class="margin-top-more margin-bottom-more padding-top-more padding-bottom-more">
+
+            <div class="container">  <!-- Container Outer START -->
+              <div class="row">  <!-- Row Heading START -->
+                <div class="col-xs-12">  <!-- Col Heading START -->
+
+                  <h2 class="margin-top-standard margin-bottom-standard">Developers Teams love DigitalOcean</h2>
+
+                </div> <!-- Col END -->
+              </div> <!-- ROW END -->
+
+              <div class="ms-smaller-container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="inner-slider padding-more">
+
+                      <div class="ms-bg-white padding-more">
+                        <img class="margin-top-more margin-bottom-more img-responsive center-block" src="img/rockerbox.png" alt="">
+                        <p class="text-bigger">"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
+
+                        <p><strong>Rick O'Toole</strong></p>
+                        <p>Co-founder and CTO</p>
+                        <p class="margin-top-more margin-bottom-more"><a href="#">Read Story ></a></p>
+
+                      </div>
+
+                      <a href="#"><span class="hidden-xs slider-arrow-left align-y fa-ready"></span></a>
+                      <a href="#"><span class="hidden-xs slider-arrow-right align-y fa-ready"></span></a>
+
+                    </div>  <!-- Inner Slider END -->
+                  </div>
+
+                  <div class="col-xs-12">  <!-- Slider Caption -->
+
+                    <div class="slider-circles">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>  <!-- Circles END -->
+
+                  </div>  <!-- COL Slider Caption END -->
+                </div>  <!-- Row END -->
+              </div>  <!-- Smaller Container END -->
+            </div>  <!-- Container Grid END -->
+          </div>  <!-- Margin and Padding END -->
+        </div>  <!-- inner section END -->
+      </section>  <!-- Section Slider-2 END -->
+
+      <section id="call-to-action">  <!-- Section Call to Action START -->
+        <div class="ms-bg-gradient-blue text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="padding-more margin-top-more margin-bottom-more text-center">
+                  <h2 class="margin-bottom-more">Get Started Now</h2>
+                  <button class="btn btn-lg ms-btn-white">Create Your Account</button>
+                </div>
+
+              </div>  <!-- COL END -->
+            </div>  <!-- ROW END -->
+          </div>  <!-- Container END -->
+        </div>
+
+      </section>  <!-- Section Call to Action END -->
+
+    </main>  <!-- Main END -->
+
+    <footer>  <!-- Footer START -->
+      <div class="ms-bg-dark-blue  padding-top-more padding-bottom-more">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-4">  <!-- Copyright area START -->
+              <img class="margin-bottom-standard" src="img/logo-small.svg" alt="">
+              <p id="footer-copyright-bar">&copy; 2020 DigitalOcean, LLC. All rights reserved.<br>
+              <span>Proudly made in NY</span></p>
+              <ul id="footer-social-links" class="list-inline list-unstyled text-bigger">
+                <li><a href="#"><i class="text-bigger fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="text-bigger fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="text-bigger fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="text-bigger fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="text-bigger fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>  <!-- Copyright area END -->
+
+            <div class="col-xs-12 col-sm-12 col-md-8">  <!-- Col Footer Menus Outer START-->
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <h4 class="text-white">Company</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partner Network</a></li>
+                    <li><a href="#">Referral Program</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Legal & Security</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <h4 class="text-white">Products</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Droplets</a></li>
+                    <li><a href="#">Spaces</a></li>
+                    <li><a href="#">Kubernetes</a></li>
+                    <li><a href="#">Load Balancers</a></li>
+                    <li><a href="#">Block Storage</a></li>
+                    <li><a href="#">Tools & Integrations</a></li>
+                    <li><a href="#">One-click Apps</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Relase Notes</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <h4 class="text-white">Community</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Meetups</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">Write for Donations</a></li>
+                    <li><a href="#">Droplets for Demos</a></li>
+                    <li><a href="#">Hatch</a></li>
+                    <li><a href="#">Shop Swag</a></li>
+                    <li><a href="#">Research Program</a></li>
+                    <li><a href="#">Currents Research</a></li>
+                    <li><a href="#">Open Source</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <h4 class="text-white">Support</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Network Status</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>  <!-- Col Footer Outer Menu END -->
+          </div>  <!-- Outer ROW END -->
+        </div>  <!-- Outer Container END -->
       </div>
 
-    </section>   <!-- Section Features END -->
-
-    <section id="our-locations">   <!-- Section Locations START -->
-
-      <div class="container">
-        <div class="row">  <!-- Heading ROW START -->
-          <div class="col-xs-12">
-
-          </div>
-        </div>  <!-- Heading ROW END -->
-
-        <div class="row">  <!-- Outer Location list START -->
-
-          <div class="col-xs-12 col-md-6">  <!-- Location #1 col START -->
-
-          </div>   <!-- Col END -->
-
-          <div class="col-xs-12 col-md-6">  <!-- Location #2 col START -->
-
-          </div>  <!-- Col END -->
-
-
-        </div>  <!-- Outer Location list END -->
-
-      </div>  <!-- Container END -->
-
-    </section>  <!-- Section Location END -->
-
-    <section id="slider-2">  <!-- Section slider-2 START -->
-
-    </section>  <!-- Section Slider-2 END -->
-
-    <section id="call-to-action">  <!-- Section Call to Action START -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-
-          </div>  <!-- COL END -->
-        </div>  <!-- ROW END -->
-      </div>  <!-- Container END -->
-
-    </section>  <!-- Section Call to Action END -->
-
-  </main>  <!-- Main END -->
-
-  <footer>  <!-- Footer START -->
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-4">  <!-- Copyright area START -->
-          footer copyright
-        </div>  <!-- Copyright area END -->
-
-        <div class="col-xs-12 col-sm-12 col-md-8">
-          footer menus
-        </div>  <!-- Col Outer Menu END -->
-      </div>  <!-- Outer ROW END -->
-    </div>  <!-- Outer Container END -->
-
-  </footer>  <!-- Footer END -->
+    </footer>  <!-- Footer END -->
 
   </body>
 </html>
