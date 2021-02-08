@@ -439,3 +439,87 @@ footer ul.list-unstyled li:not(:last-child) {
   margin-bottom: 10px;
 
 }
+
+
+aside#chat-box {  /* Whole Chat Box Positioning*/
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 42;
+}
+
+#chat-box-text {  /* Chat box text container */
+  position: relative;
+  max-width: 335px;
+  height:80px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#chat-box-text p {  /* text */
+  margin:0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#chat-box-text::after {  /* triangle on top (only on mobile) */
+  position: absolute;
+  top: -7px;
+  left: 33px;
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height:14px;
+  background-color: white;
+  transform: rotate(45deg); /* turn the box into a triangle*/
+}
+
+#chat-box-icon {  /* Img box with Shark*/
+  position: relative;
+  width:80px;
+  height:80px;
+  margin-bottom: 25px;
+  background-color: #006aff;
+  background-image: url("../img/shark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#chat-box-icon::after {  /* push notifications */
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "2";
+  display: inline-block;
+  height:38px;
+  width:38px;
+  line-height: 32px;
+  color:white;
+  text-align: center;
+  font-weight: 900;
+  transform: translate(50% , -50%);  /* ...upper right corner*/
+  background-color: red;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width:992px) {
+  aside#chat-box {  /* Whole chat box on right (only on desktop)*/
+    right: 30px;
+    left:auto; /* reset*/
+  }
+  #chat-box-text {
+    float: right;
+  }
+  #chat-box-text::after {  /* Triangle on right*/
+    right: -7px;
+    bottom: 33px;
+    top: auto; /* reset */
+    left: auto; /* reset */
+  }
+  #chat-box-icon {
+    float: right;
+    margin-left:25px;
+  }
+}
