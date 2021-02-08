@@ -23,12 +23,19 @@ body {
   color: #5b6987;
 }
 
-ul li a ,
+a ,        /* link reset */
+a:hover ,
+a:focus ,
+a:active {
+  color: #006aff;
+  text-decoration: none;
+}
+ul li a ,  /* links on menu */
 ul li a:hover ,
 ul li a:active ,
 ul li a:focus ,
-ul li a:visited {
-  text-decoration: none;
+ul li a:visited
+{
   color:inherit;
 }
 
@@ -39,38 +46,32 @@ I N T E G R A T I O N S
 #######################
 */
 
-.ms-overflow-auto {
+.ms-overflow-auto {  /* Fixes margin issues on certain sections*/
   overflow:auto;
 }
 
-.fa-ready::after {
+.fa-ready::after {  /* Requierd code to inject fa icons via css*/
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
 }
 
-.ms-smaller-container {
+.ms-smaller-container {  /* limited-width container (whose width varies based on specific section) */
   margin: auto;
 }
 
-@media screen and (max-width:767px) {
-  .contents-on-mobile {
-    display: contents;
-  }
+.contents-on-xs {
+  display: contents;
 }
-
-@media screen and (max-width:991px) {
-  .contents-on-tablet {
-    display: contents;
-  }
-}
-
 @media screen and (min-width:768px) {
+  .contents-on-xs {
+    display: block;
+  }
   .contents-on-wide {
     display: contents;
   }
 }
 
-.row.gutter-5-px {
+.row.gutter-5-px {  /* Rows with reduced gutter between columns */
   margin-left: -5px;
   margin-right: -5px;
 }
@@ -78,16 +79,10 @@ I N T E G R A T I O N S
   padding:5px;
 }
 
-.align-y {
+.align-y {                  /* Vertically align via absolut positioning*/
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-.align-x-y {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
 }
 
 .padding-standard {
@@ -136,11 +131,13 @@ h1 {
   font-weight: 700;
 }
 
-h2:not(.text-white h2) {
-  color: #031b4e;
+h2 {
   font-weight: 600;
   font-size: 3.4rem;
   line-height: 4.5rem;
+}
+h2:not(.text-white h2) {
+  color: #031b4e;
 }
 
 h3 {
@@ -148,10 +145,6 @@ h3 {
   font-weight: 500;
   font-size: 2.1rem;
   line-height: 2.8rem;
-}
-
-h4 {
-
 }
 
 .text-bigger {
@@ -172,7 +165,8 @@ C O L O R S
 .ms-btn-white {
   background-color: white;
 }
-.ms-btn-blue {
+.ms-btn-blue ,
+.ms-btn-blue:hover {
   color:white;
   background-color:#579aff;
 }
@@ -190,50 +184,34 @@ C O L O R S
   background-image: linear-gradient(to top, #00209b , #0042bb);
 }
 
+
 /*
 ##################
 H E A D E R  T O P
 ##################
 */
+
 header #header-top-bar {
   position: fixed;
   top:0;
   left:0;
   right:0;
-  background-color: white;
   z-index: 42;
+  background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header nav , header .outer-logo {
-  height: 80px;
+#header-top-bar nav ,
+#header-top-bar .outer-logo {
+  height: 80px;  /* Fixed height */
 }
 
-header nav ul li {
-  line-height: 80px;
-  font-weight: 500;
-}
-
-header #header-top-bar .btn ,
-header #header-top-bar .btn:visited {
-  color: #3a8aff;
-  border-color: #3a8aff;
-}
-
-
-header .outer-logo {
+#header-top-bar .outer-logo {
   position: relative;
 }
-
-header .outer-logo .logo {
+#header-top-bar .outer-logo .logo {
   max-height: 40px;
   max-width: 100%;
-}
-
-.add-chevron::after {
-  content: "\f078";
-  display: inline-block;
-  margin-left: 7px;
 }
 
 #hamburger-icon::after {
@@ -241,6 +219,23 @@ header .outer-logo .logo {
   line-height: 80px;
   color: #3a8aff;
   font-size: 4rem;
+}
+
+#header-top-bar nav ul li {
+  line-height: 80px;  /* Vertically align menu items via line-height*/
+  font-weight: 500;
+}
+
+#header-top-bar .btn ,
+#header-top-bar .btn:visited {
+  color: #3a8aff;
+  border-color: #3a8aff;
+}
+
+.add-chevron::after {  /* Adds chevron to certain menu items*/
+  content: "\f078";
+  display: inline-block;
+  margin-left: 7px;
 }
 
 /*
@@ -251,7 +246,7 @@ B A N N E R
 */
 
 #header-banner {
-  margin-top: 80px;
+  margin-top: 80px;  /* Prevents fixed top-bar overlapping */
 }
 
 #header-banner .banner-outer {
@@ -260,38 +255,29 @@ B A N N E R
   background-position: center;
 }
 
-header #header-banner a {
-text-decoration: underline;
+#header-banner-text {  /* Creates a gap between text and widget*/
+  max-width: 640px;
 }
 
-#header-banner-text {
-max-width: 640px;
-}
-
-#header-banner #sign-up-widget {
+#sign-up-widget {
   width:100%;
   border-radius: 5px;
 }
 
-#header-banner #sign-up-widget input {
+#sign-up-widget input {
   width: 100%;
   height: 40px;
   border-radius: 5px;
   border-width: 1px;
   padding:5px;
 }
-
-#header-banner #sign-up-widget input::placeholder {
+#sign-up-widget input::placeholder {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-#header-banner #google-sign-up {
-  background-image: url("../img/google-icon.png");
-  background-size: auto calc( 100% - 20px);
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+#sign-up-widget a {
+text-decoration: underline;
 }
 
 #header-banner #sign-up-widget h2 {
@@ -303,6 +289,15 @@ max-width: 640px;
   color: #006aff;
 }
 
+#sign-up-widget #google-sign-up {
+  background-image: url("../img/google-icon.png");
+  background-size: auto calc( 100% - 20px);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+}
+
+
 /*
 ###############
 C U S T O M E R
@@ -312,7 +307,7 @@ S E C T I O N
 
 #customers img {
   max-width: 100%;
-  height: 80px;
+  height: 90px;
 }
 
 /*
@@ -324,7 +319,7 @@ S E C T I O N
 */
 
 #how-it-works .ms-smaller-container {
-  max-width: 80%;
+  max-width: 85%;
 }
 
 #how-it-works ul {
@@ -340,14 +335,16 @@ S E C T I O N S
 */
 
 [id*="slider"] .ms-smaller-container {
-  max-width: 640px;
+  max-width: 768px;
 }
 
 .inner-slider {
-  position: relative;
+  max-width: 80%;
+  margin: auto;
+  position: relative;  /* To absolute positioning arrows inside*/
 }
 
-.inner-slider [class*="slider-arrow"] {
+.inner-slider [class*="slider-arrow"] {  /* Arrows */
   color: initial;
   font-size: 4rem;
   transform: scaleY(1.3);
@@ -355,15 +352,14 @@ S E C T I O N S
 .inner-slider [class*="slider-arrow"]:hover {
   color: rgba(0, 0, 0, 0.25);
 }
-
 .slider-arrow-left {
-  left: -10px;
+  left: -20px;
 }
 .slider-arrow-left::after {
   content: "\f053";
 }
 .slider-arrow-right {
-  right: -10px;
+  right: -20px;
 }
 .slider-arrow-right::after {
   content: "\f054";
@@ -378,15 +374,15 @@ S E C T I O N S
   border-radius: 50%;
   margin-left: 10px;
 }
-
 .slider-circles span:first-child::after {
   background-color: #006aff;
   border: none;
   margin-left: 0;
 }
 
-#slider-2 img {
-  max-width: 50%;
+#slider-2 .inner-slider img {
+  width:100%;
+  max-width: 300px;
 }
 
 /*
@@ -396,20 +392,25 @@ O U R L O C A T I O N S
 */
 
 .single-location-content {
-  height: 50px;
-  line-height: 50px;
+  height: 50px;  /* Fixed Height */
+  line-height: 50px; /* Vertically align content*/
   border-bottom: 1px solid white;
 }
 
-.single-location-content > div:first-child {
+.single-location-content > div:first-child {  /* Location code */
   font-weight: 700;
 }
 
 .single-location-content a {
-  color: #02cd74;
+  color: #02cd74;  /* links color */
 }
 
-/* cta */
+/*
+############
+C A L L  T O
+A C T I O N
+############
+*/
 
 #call-to-action .btn {
   font-weight: 500;
@@ -423,18 +424,18 @@ F O O T E R
 */
 
 footer {
-color: rgba(255, 255, 255, 0.6);
+color: rgba(255, 255, 255, 0.6);  /* footer main color*/
+}
+footer #footer-copyright-bar span {  /* lighter color */
+color: rgba(255, 255, 255, 0.3);
 }
 
-footer #footer-copyright-bar span {
-color: rgba(255, 255, 255, 0.3);
+footer h4 {
+font-weight: 600;
 }
 
 footer h4 ,
 footer ul.list-unstyled li:not(:last-child) {
   margin-bottom: 10px;
-}
 
-#footer-social-links {
-  /* font-size: 2.5rem; */
 }
